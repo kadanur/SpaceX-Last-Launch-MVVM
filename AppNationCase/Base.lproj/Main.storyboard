@@ -1,24 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yen-6C-Bau">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--SpaceX Information-->
+        <scene sceneID="CVb-Nf-aWk">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="lDs-6Z-3cf" customClass="HomeViewController" customModule="AppNationCase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t8L-fj-8Dr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ship name:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTp-Bo-GRF">
+                                <rect key="frame" x="16" y="248" width="288" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="KeE-3S-dks"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hw6-G3-oGQ">
+                                <rect key="frame" x="16" y="350" width="288" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="5MH-TL-QiQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fyg-rx-IZI">
+                                <rect key="frame" x="16" y="401" width="288" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="Xtt-Gy-swX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flight Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KfV-I9-Kdy">
+                                <rect key="frame" x="16" y="299" width="273" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="eYF-8X-wC6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ysx-8U-mqj">
+                                <rect key="frame" x="0.0" y="44" width="320" height="187"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMy-Ec-eJB">
+                                <rect key="frame" x="16" y="460" width="288" height="40"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Youtube">
+                                            <attributes>
+                                                <font key="NSFont" size="22" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseBackgroundColor" systemColor="systemPinkColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="youtubeButtonClicked:" destination="lDs-6Z-3cf" eventType="touchUpInside" id="eGA-A3-QjB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35X-JQ-FwV">
+                                <rect key="frame" x="16" y="516" width="288" height="40"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Wikipedia">
+                                            <attributes>
+                                                <font key="NSFont" size="22" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="wikipediaButtonClicked:" destination="lDs-6Z-3cf" eventType="touchUpInside" id="a6e-We-WTa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PdP-OS-nXT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yTp-Bo-GRF" firstAttribute="leading" secondItem="KfV-I9-Kdy" secondAttribute="leading" id="0On-e7-oKL"/>
+                            <constraint firstItem="PdP-OS-nXT" firstAttribute="bottom" secondItem="35X-JQ-FwV" secondAttribute="bottom" constant="12" id="70g-Jr-t5A"/>
+                            <constraint firstItem="Fyg-rx-IZI" firstAttribute="leading" secondItem="qMy-Ec-eJB" secondAttribute="leading" id="CqI-9E-aL4"/>
+                            <constraint firstItem="KfV-I9-Kdy" firstAttribute="leading" secondItem="Hw6-G3-oGQ" secondAttribute="leading" id="Ed7-Lx-kAU"/>
+                            <constraint firstItem="qMy-Ec-eJB" firstAttribute="trailing" secondItem="35X-JQ-FwV" secondAttribute="trailing" id="HVZ-z8-92A"/>
+                            <constraint firstItem="yTp-Bo-GRF" firstAttribute="top" secondItem="ysx-8U-mqj" secondAttribute="bottom" constant="17" id="NDn-dJ-4sw"/>
+                            <constraint firstItem="ysx-8U-mqj" firstAttribute="leading" secondItem="PdP-OS-nXT" secondAttribute="leading" id="NJA-r0-jV8"/>
+                            <constraint firstItem="KfV-I9-Kdy" firstAttribute="top" secondItem="yTp-Bo-GRF" secondAttribute="bottom" constant="8" id="RjR-EL-yto"/>
+                            <constraint firstItem="yTp-Bo-GRF" firstAttribute="leading" secondItem="t8L-fj-8Dr" secondAttribute="leadingMargin" id="Te2-Wv-LP4"/>
+                            <constraint firstItem="yTp-Bo-GRF" firstAttribute="trailing" secondItem="t8L-fj-8Dr" secondAttribute="trailingMargin" id="XGp-Mt-Hk1"/>
+                            <constraint firstItem="35X-JQ-FwV" firstAttribute="top" secondItem="qMy-Ec-eJB" secondAttribute="bottom" constant="16" id="gD0-ca-EE6"/>
+                            <constraint firstItem="Fyg-rx-IZI" firstAttribute="top" secondItem="Hw6-G3-oGQ" secondAttribute="bottom" constant="8" id="h60-rU-l5B"/>
+                            <constraint firstItem="ysx-8U-mqj" firstAttribute="top" secondItem="PdP-OS-nXT" secondAttribute="top" id="iN1-2w-5aI"/>
+                            <constraint firstItem="PdP-OS-nXT" firstAttribute="trailing" secondItem="KfV-I9-Kdy" secondAttribute="trailing" constant="31" id="j6Y-eV-ZUb"/>
+                            <constraint firstItem="Fyg-rx-IZI" firstAttribute="trailing" secondItem="qMy-Ec-eJB" secondAttribute="trailing" id="jnQ-Go-epj"/>
+                            <constraint firstItem="yTp-Bo-GRF" firstAttribute="trailing" secondItem="Hw6-G3-oGQ" secondAttribute="trailing" id="l4v-ye-ki6"/>
+                            <constraint firstItem="Hw6-G3-oGQ" firstAttribute="trailing" secondItem="Fyg-rx-IZI" secondAttribute="trailing" id="pgo-NS-G7L"/>
+                            <constraint firstItem="ysx-8U-mqj" firstAttribute="centerX" secondItem="yTp-Bo-GRF" secondAttribute="centerX" id="qfg-FO-jQC"/>
+                            <constraint firstItem="qMy-Ec-eJB" firstAttribute="top" secondItem="Fyg-rx-IZI" secondAttribute="bottom" constant="16" id="tmq-jw-FOe"/>
+                            <constraint firstItem="Hw6-G3-oGQ" firstAttribute="top" secondItem="KfV-I9-Kdy" secondAttribute="bottom" constant="8" id="uLb-vT-2Es"/>
+                            <constraint firstItem="Hw6-G3-oGQ" firstAttribute="leading" secondItem="Fyg-rx-IZI" secondAttribute="leading" id="wYN-1u-rzb"/>
+                            <constraint firstItem="qMy-Ec-eJB" firstAttribute="leading" secondItem="35X-JQ-FwV" secondAttribute="leading" id="you-iB-lli"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="SpaceX Information" id="2ef-fc-AaH"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="Fyg-rx-IZI" id="eWl-Zm-5Nj"/>
+                        <outlet property="detailsLabel" destination="Hw6-G3-oGQ" id="VHu-M8-b6m"/>
+                        <outlet property="flightLabel" destination="KfV-I9-Kdy" id="nHC-25-bXM"/>
+                        <outlet property="image" destination="ysx-8U-mqj" id="1Ep-Ke-tDZ"/>
+                        <outlet property="nameLabel" destination="yTp-Bo-GRF" id="OXl-kL-5dr"/>
+                        <outlet property="wikipediaButton" destination="35X-JQ-FwV" id="Htp-qo-Jnp"/>
+                        <outlet property="youtubeButton" destination="qMy-Ec-eJB" id="1py-p5-Vv8"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="glD-p1-bC8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="990" y="-382.3943661971831"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0nE-7s-Go9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yen-6C-Bau" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pAx-N2-lwn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lDs-6Z-3cf" kind="relationship" relationship="rootViewController" id="Z0g-Uc-aBl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VOh-vS-pY8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="81.159420289855078" y="-382.36607142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

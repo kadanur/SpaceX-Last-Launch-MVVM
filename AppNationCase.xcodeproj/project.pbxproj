@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA68410527A2016D00AB02AA /* SpaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68410427A2016D00AB02AA /* SpaceViewModel.swift */; };
 		BAA9578627A15E1C0076363A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA9578527A15E1C0076363A /* AppDelegate.swift */; };
 		BAA9578827A15E1C0076363A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA9578727A15E1C0076363A /* SceneDelegate.swift */; };
-		BAA9578A27A15E1C0076363A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA9578927A15E1C0076363A /* ViewController.swift */; };
 		BAA9578D27A15E1C0076363A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA9578B27A15E1C0076363A /* Main.storyboard */; };
 		BAA9578F27A15E1D0076363A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA9578E27A15E1D0076363A /* Assets.xcassets */; };
 		BAA9579227A15E1D0076363A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA9579027A15E1D0076363A /* LaunchScreen.storyboard */; };
+		BAA9579E27A15E660076363A /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA9579D27A15E660076363A /* Webservice.swift */; };
+		BAA957A227A189640076363A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA957A127A189640076363A /* HomeViewController.swift */; };
+		BAA957A827A1ACE10076363A /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA957A727A1ACE10076363A /* Space.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA68410427A2016D00AB02AA /* SpaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceViewModel.swift; sourceTree = "<group>"; };
 		BAA9578227A15E1C0076363A /* AppNationCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppNationCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA9578527A15E1C0076363A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAA9578727A15E1C0076363A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BAA9578927A15E1C0076363A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BAA9578C27A15E1C0076363A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BAA9578E27A15E1D0076363A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAA9579127A15E1D0076363A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAA9579327A15E1D0076363A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAA9579D27A15E660076363A /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		BAA957A127A189640076363A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BAA957A727A1ACE10076363A /* Space.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		BAA9578427A15E1C0076363A /* AppNationCase */ = {
 			isa = PBXGroup;
 			children = (
+				BAA9579C27A15E5A0076363A /* Service */,
+				BAA9579A27A15E3E0076363A /* Model */,
+				BAA9579927A15E340076363A /* View */,
+				BAA9579B27A15E470076363A /* ViewModel */,
 				BAA9578527A15E1C0076363A /* AppDelegate.swift */,
 				BAA9578727A15E1C0076363A /* SceneDelegate.swift */,
-				BAA9578927A15E1C0076363A /* ViewController.swift */,
 				BAA9578B27A15E1C0076363A /* Main.storyboard */,
 				BAA9578E27A15E1D0076363A /* Assets.xcassets */,
 				BAA9579027A15E1D0076363A /* LaunchScreen.storyboard */,
 				BAA9579327A15E1D0076363A /* Info.plist */,
 			);
 			path = AppNationCase;
+			sourceTree = "<group>";
+		};
+		BAA9579927A15E340076363A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BAA957A127A189640076363A /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BAA9579A27A15E3E0076363A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BAA957A727A1ACE10076363A /* Space.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BAA9579B27A15E470076363A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BA68410427A2016D00AB02AA /* SpaceViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BAA9579C27A15E5A0076363A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BAA9579D27A15E660076363A /* Webservice.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAA9578A27A15E1C0076363A /* ViewController.swift in Sources */,
+				BAA957A227A189640076363A /* HomeViewController.swift in Sources */,
+				BAA957A827A1ACE10076363A /* Space.swift in Sources */,
 				BAA9578627A15E1C0076363A /* AppDelegate.swift in Sources */,
 				BAA9578827A15E1C0076363A /* SceneDelegate.swift in Sources */,
+				BAA9579E27A15E660076363A /* Webservice.swift in Sources */,
+				BA68410527A2016D00AB02AA /* SpaceViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +333,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3A8H2GTC36;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppNationCase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -316,6 +361,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3A8H2GTC36;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppNationCase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
